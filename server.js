@@ -9,8 +9,6 @@ const port = 3000;
 
 app.use(logger('dev')); 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(express.text());
 
 app.use('/log', logRoute);
 
